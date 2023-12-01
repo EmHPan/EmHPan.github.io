@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Montserrat:wght@300&display=swap');
+h1{
+    font-family: 'Hedvig Letters Serif', serif;
+    color:#C085FF;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    font-family: 'Hedvig Letters Serif', serif;
+    color: #9DB7CF;
+}
+nav{
+    font-family: 'Hedvig Letters Serif', serif;
+    justify-content: space-evenly;
+}
+main{
+    background:#dddddd;
+}
+img{
+    max-width: 50%;
+    padding-inline: 10px;
+    padding-top: 100px;
+}
+.info{
+    grid-area:info;
+}
+.cookies{
+    grid-area: menu;
+}
+.pic{
+    grid-area: pic;
+}
+.pic2{
+    grid-area: pic2;
+}
+.logo{
+    grid-area: logo;
+    max-width: 100%;
+}
+.caption{
+    grid-area: cap;
+}
+.caption2{
+    grid-area: cap2;
+}
+.about{
+    grid-area: abt;
+}
+.rewards{
+    grid-area: reward;
+}
+p{
+    padding:2px;
+}
+button{
+    border-radius: 5px;
+    background:#9DB7CF;
+color:#434E59;
+border:#dddddd;
+}
+button:hover{
+background:#434E59;
+    color:#C085FF;
+}
+header{
+    background: #434E59;
+    padding: 10px;
+    text-align: center;
+}
+footer{
+    background:#434E59;
+    color:#9DB7CF;
+    padding: 10px;
+}
+ul li a{
+    color:#9DB7CF;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+    display:inline-block;
+    padding-inline:70px;
+}
+@media only screen and (min-width:1200px){
+    main{
+        display:grid;
+        grid-template-areas: 
+        "logo pic pic2"
+        "abt menu reward"
+        "info cap cap2";
+    }
+    .pic, .cookies, .caption{
+        text-align: center;
+        display:inline-block;
+    }
+    .pic2, .rewards, .caption2{
+        text-align: right;
+        display:inline-block;
+        padding: 5px;
+    }
+    .logo, .about, .info{
+        padding:5px;
+    }
+}
